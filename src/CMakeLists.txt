@@ -1,8 +1,8 @@
 set(header_path "${mudlink_SOURCE_DIR}/include/mudlink")
 
-set(header "${header_path}/mudlink.hpp")
+set(header "${header_path}/mudlink.hpp" "${header_path}/telnet.hpp" "${header_path}/mudconn.hpp")
 
-set(src "mudlink.cpp")
+set(src "mudlink.cpp" "telnet.cpp" "mudconn.cpp")
 
 #configure_file("config.hpp.in" "${CMAKE_CURRENT_BINARY_DIR}/config_impl.hpp")
 
